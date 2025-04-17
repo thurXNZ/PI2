@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model user {
+  id             Int          @id @default(autoincrement())
+  email          String       @unique(map: "User_email_key") @db.VarChar(255)
+  senha          String
+  nome           String       @db.VarChar(45)
+  sobrenome      String       @db.VarChar(45)
+  cpf            String       @unique(map: "User_cpf_key")
+  dataNascimento String       @db.VarChar(20)
+  genero         user_genero?
+  is_admin       is_admin?
+  pedidos        Pedido[]
+}
+
+model Ingresso {
+  id      Int          @id @default(autoincrement())
+  tipo    TipoIngresso
+  preco   Float
+  pedidos Pedido[]
+}
+
+model Pedido {
+  id           Int      @id @default(autoincrement())
+  clienteId    Int
+  cliente      user     @relation(fields: [clienteId], references: [id])
+  ingressoId   Int
+  ingresso     Ingresso @relation(fields: [ingressoId], references: [id])
+  dataPedido   DateTime @default(now())
+  codigoPedido String
+  quantidade   Int
+  valorTotal   Float
+
+  @@index([clienteId])
+  @@index([ingressoId])
+}
+
+enum TipoIngresso {
+  TRILHA
+  HOSPEDAGEM
+  CACHOEIRA
+}
+
+enum is_admin {
+  Sim
+  Nao
+}
+
+enum user_genero {
+  Masculino
+  Feminino
+  Prefiro_nao_informar
+  Nao_binario
+}

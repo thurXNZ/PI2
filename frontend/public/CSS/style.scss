@@ -1,0 +1,642 @@
+$primary : #7297b3;
+
+@import "node_modules/bootstrap/scss/bootstrap.css";
+
+// sass --watch style.scss:style.css
+
+.btn-outline-custom {
+  color: #007bff; 
+  border-color: #007bff; 
+}
+
+.btn-outline-custom:hover {
+  color: #ffffff; 
+  background-color: #7297b3;
+}
+
+
+#letra {
+  font-size: 60px;
+}
+
+#nav-registro{
+  padding-top: 10px !important;
+  background-color: transparent !important;
+}
+
+#text-reg{
+  padding-top: 30px;
+}
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.marketing {
+  margin-top: 100px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 2rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 0.60;
+  letter-spacing: -.05rem;
+  width: 600px;
+}
+
+.featurette-heading p {
+  margin-top: 10px;
+  line-height: 1rem;
+  letter-spacing: normal;
+  width: 90%;
+}
+
+.charts {
+  gap: 70px;
+}
+
+.chart {
+  width: 200px;
+  border-top: solid black 1px;
+  padding: 20px 10px 0 0;
+  margin-top: 20px;
+}
+
+.chart h4 {
+  color: #3d8361;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  color: white;
+  background-color: #041C2D;
+}
+
+.navbar {
+  max-width: 100vw;
+}
+
+footer {
+  color: white;
+  background-color: #041C2D;
+}
+
+a.nav-link.active {
+  color: rgb(255, 255, 255);
+}
+
+#banner {
+  width: 100%;
+}
+
+.banner {
+  margin-top: -50px;
+}
+
+.gradientbg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  height: 670px;
+  position: absolute;
+  top: 0px;
+}
+
+.brand a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li{
+  list-style-type: none;
+}
+
+#lista{
+  margin-left: 3rem;
+}
+
+li>a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+#hr {
+  color: #A2A05B;
+}
+
+#logo-2{
+  padding-bottom: 100px;
+}
+// #login {
+//   background-color: #041C2D;
+//   max-width: 400px;
+//   margin: auto;
+//   margin-top: 6rem;
+//   height: 580px;
+//   border-radius: 10px;
+// }
+
+#btn-entrar {
+  background-color: #041C2D;
+}
+
+#contato {
+  padding-top: 5rem;
+}
+
+#sec {
+  padding-top: 80px;
+}
+
+.text-container {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 67%;
+}
+
+.Cards {
+  display: flex;
+}
+
+.Card {
+  border-radius: 12px;
+  transition: all 0.2s linear;
+}
+
+.Card:hover {
+  transform: scale(1.1);
+}
+
+.Cards:hover>.Card:not(:hover) {
+  filter: blur(10px);
+}
+
+#cadastro{
+  padding-top: 150px;
+}
+
+.secao {
+  height: 500px;
+}
+
+.txt {
+  position: relative;
+  z-index: 1;
+  margin: 20px 15%;
+}
+
+#Joy-p{
+  padding-top: 30px;
+}
+
+.pedido-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#info{
+background-color: #7297b3;
+}
+
+.custom-alert {
+  position: fixed !important;
+  top: 20px !important;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  display: none;
+  z-index: 9999;
+}
+
+.success {
+  background-color: #5cb85c;
+}
+
+.error {
+  background-color: #d9534f;
+}
+
+
+#mensagemErro {
+  background-color: rgb(207, 58, 13);
+  border-radius: 10px;
+  display: none;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  height: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 80%;
+  width: 30%; /* ajuste conforme necessário */
+}
+#MensagemErro {
+ color: red;
+}
+
+#mensagemErro1 {
+  background-color: rgba(207, 58, 13, 0.862);
+  display: none;
+  font-size: 20px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding: 85px;
+  position: absolute;
+  height: 30%;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+#mensagemDeErro {
+  background-color: rgba(207, 58, 13, 0.862);
+  display: none;
+  font-size: 20px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding: 85px;
+  position: absolute;
+  height: 30%;
+  top: 130%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+
+#mensagemSucesso1 {
+  background-color: rgba(13, 110, 207, 0.862);
+  display: none;
+  font-size: 20px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding: 85px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+#mensagemSucesso {
+  background-color: rgba(13, 110, 207, 0.862);
+  border-radius: 10px;
+  border: 0.5px solid black;
+  display: none;
+  font-size: 20px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding: 85px;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  height: -10%;
+  width: 20%;
+  z-index: 1;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ddd7d7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#section { 
+  padding: 40px 0; 
+}
+
+.image {
+  height: 380px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../img/Green\ Bold\ Cabin\ Renting\ Landscape\ Banner\.png);
+}
+
+.text { 
+  position: relative; 
+}
+
+.text::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-2deg); /* Corrigido o erro de sintaxe aqui */
+  width: 150%;
+  height: 125%;
+  background: #ffffff;
+}
+
+.Img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery {
+  margin-top: 2rem !important;
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 330px);
+  gap: 10px;
+  margin-inline: 30px;
+}
+
+.gallery>.card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgb(77, 77, 77);
+}
+
+.Ccard:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.Ccard:nth-child(2) {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.Ccard:nth-child(3) {
+  grid-area: 1 / 2 / span 2 / span 2;
+}
+
+.Ccard:nth-child(4) {
+  grid-area: 1 / 4 / span 1 / span 1;
+}
+
+.Ccard:nth-child(5) {
+  grid-area: 1 / 5 / span 1 / span 1;
+}
+
+.Ccard:nth-child(6) {
+  grid-area: 2 / 4 / span 1 / span 2;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+  }
+
+  .card:nth-child(1) {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+
+  .Ccard:nth-child(2) {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+
+  .Ccard:nth-child(3) {
+    display: none;
+  }
+
+  .Ccard:nth-child(4) {
+    grid-area: 1 / 2 / span 1 / span 1;
+  }
+
+  .Ccard:nth-child(5) {
+    grid-area: 1 / 3 / span 1 / span 1;
+  }
+
+  .Ccard:nth-child(6) {
+    grid-area: 2 / 2 / span 1 / span 2;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+
+
+// mobile 
+@media (min-width: 320px) and (max-width: 425px) {
+  #myCarousel {
+    padding-top: 40px;
+  }
+
+  #vid {
+    padding-bottom: 0px !important;
+  }
+
+  #myCarousel p {
+    font-size: 100rem;
+  }
+
+  #letra {
+    font-size: 10px;
+  }
+
+  #button a.btn {
+    font-size: 10px;
+  }
+
+  .marketing {
+    margin-top: 50px;
+  }
+
+  #login {
+    width: 350px;
+  }
+
+  #sec {
+    padding-top: 40px;
+  }
+
+  #nav-registro{
+    left: 20%;
+  }
+
+}
+
+#preco {
+  width: 900px;
+}
+
+#espacimgptxt {
+  margin-top: -2rem;
+}
+
+// tablet
+@media (min-width: 425px) and (max-width: 768px) {
+  #myCarousel {
+    padding-top: 40px;
+  }
+
+  #myCarousel p {
+    font-size: 10px;
+  }
+
+  #letra {
+    font-size: 20px;
+  }
+
+  #button a.btn {
+    font-size: 15px;
+  }
+
+  .marketing {
+    margin-top: 50px;
+  }
+
+  .card-group {
+    display: block;
+  }
+
+  #sec {
+    padding-top: 40px;
+  }
+
+  #tri {
+    align-items: center;
+  }
+  
+}
+
+// imagem joy-p, a partir de 630px
+@media(min-width: 630px) and (max-width: 991px) {
+  #joy-p {
+    width: 750px;
+    height: 450px;
+  }
+}
+
+// laptop
+@media (min-width: 768px) and (max-width: 1024px) {
+  #myCarousel {
+    padding-top: 40px;
+  }
+
+  #myCarousel p {
+    font-size: 15px;
+  }
+
+  #letra {
+    font-size: 30px;
+  }
+
+  #button a.btn {
+    font-size: 15px;
+  }
+
+  #login {
+    margin-bottom: 100px;
+  }
+
+  #sec {
+    padding-top: 40px;
+  }
+
+}
+
+// video a partir de 992px
+@media(min-width: 992px) and (max-width: 2560px) {
+
+  #vid {
+    padding-top: 5rem !important;
+  }
+
+  #visita {
+    margin-left: 200px;
+  }
+
+}
+
+//a partir de 1024px
+@media (min-width: 1024px) and (max-width: 2560px) {
+  #vid {
+    padding-top: 100px;
+  }
+
+  #login {
+    margin-bottom: 100px;
+  }
+
+  #jp {
+    max-width: 1500px;
+  }
+
+
+  #visita {
+    margin-left: 200px;
+  }
+
+}

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="img/6fc23f29-877c-46dd-8181-54cf40b4898a.png"
+                        width="200px" alt=""></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse order-md-2" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto">
+                        </li>
+                        <li id="lista" class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+
+                        <li id="lista" class="nav-item">
+                            <a class="nav-link" href="ingressos.html">Ingressos</a>
+                        </li>
+
+                        <li id="lista" class="nav-item"><a class="nav-link" href="registro.html" id="registro"
+                                style="display: block;">Registre-se</a>
+                        </li>
+
+                        <li id="lista" class="nav-item">
+                            <button class="btn btn-outline-primary " id="log" style="display: block;"> <a
+                                    class="nav-link" href="login.html">Login</a>
+                            </button>
+                        </li>
+
+                        <li id="lista" class="nav-item d-flex align-items-center">
+                            <div id="usuarioIcone" style="display: none; " class="d-flex align-items-center">
+                                <img src="img/usuario-de-perfil (1).png" alt="" width="30" height="30">
+                                <p id="nomeUsuario" class="mb-0 ms-2"></p>
+                            </div>
+                            <div class="dropdown ms-3">
+                                <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: #ffff;">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="meusIngressos.html">Meus ingressos</a></li>
+                                    <li><a class="dropdown-item" href="#" id="sair"><img src="img/sair (1).png" alt=""
+                                                width="20px"> Sair</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="mensagem-erro" id="mensagemDeErro"></div>
+        <div class="mensagem-sucesso" id="mensagemDeSucesso" style="display: block;"></div>
+
+        <div id="customAlert" class="custom-alert"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="Cards">
+                    <div class="col">
+                        <div class="Card"></div>
+                    </div>
+                    <div class="col">
+                        <div class="Card"></div>
+                    </div>
+                    <div class="col">
+                        <div class="Card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="gallery">
+                    <div class="Ccard">
+                        <img class="Img" src="img/pexels-tim-gouw-67517.jpg" alt="">
+                    </div>
+                    <div class="Ccard">
+                        <img class="Img" src="img/pexels-alena-19579096.jpg" alt="">
+                    </div>
+                    <div class="Ccard">
+                        <img class="Img" src="img/pexels-andyhvu-3217911.jpg" alt="">
+                    </div>
+                    <div class="Ccard">
+                        <img class="Img" src="img/pexels-valentina-bondarenko-11271349.jpg" alt="">
+                    </div>
+                    <div class="Ccard">
+                        <img class="Img" src="img/Green Bold Cabin Renting Landscape Banner (1).png" alt="">
+                    </div>
+                    <div class="Ccard">
+                        <img class="Img" src="img/pexels-zubair-rafiq-16132474.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="text-center py-3">Tudo o que você precisa saber sobre nossos ingressos!</h2>
+            <div class="container">
+              <div class="row">
+                <div id="preco" class="container py-2">
+                  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                      <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 text-bg-primary" style="background-color: #7297b3 !important;">
+                          <h4 class="my-0 fw-normal">Trilhas</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title pricing-card-title">R$ 15,00<small class="text-body-secondary fw-light">/por dia</small></h5>
+                          <button type="button" class="w-100 btn btn-outline-custom btn-comprar"
+                            data-preco="15" data-titulo="Trilhas" data-id="1">Comprar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 text-bg-primary" style="background-color: #7297b3 !important;">
+                          <h4 class="my-0 fw-normal">Cachoeiras</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title pricing-card-title">R$ 20,00<small class="text-body-secondary fw-light">/por dia</small></h5>
+                          <button type="button" class="w-100 btn btn-outline-custom btn-comprar"
+                            data-preco="20" data-titulo="Cachoeiras" data-id="2">Comprar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 text-bg-primary" style="background-color: #7297b3 !important;">
+                          <h4 class="my-0 fw-normal">Hospedagem</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title pricing-card-title">R$ 80,00<small class="text-body-secondary fw-light">/por dia</small></h5>
+                          <button type="button" class="w-100 btn btn-outline-custom btn-comprar"
+                            data-preco="80" data-titulo="Hospedagem" data-id="3">Comprar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+
+          <div class="modal fade" id="modal-compra" tabindex="-1" aria-labelledby="modal-compra-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-compra-label"><small>Escolha o seu ingresso</small></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="mb-3">
+                                <label><strong>Nome do Ingresso:</strong></label>
+                                <span id="nome-ingresso" class="form-control-plaintext">Nome do ingresso</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="quantidade" class="form-label"><strong>Quantidade:</strong></label>
+                                <input type="number" class="form-control" id="quantidade" min="1" value="1">
+                            </div>
+                            <div class="mb-3">
+                                <label><strong>Valor do ingresso:</strong></label>
+                                <span id="valor-ingresso" class="form-control-plaintext">R$ 0,00</span>
+                            </div>
+                            <div class="mb-3">
+                                <label><strong>Valor total da compra:</strong></label>
+                                <span id="valor-total" class="form-control-plaintext">R$ 0,00</span>
+                            </div>
+                            <input type="hidden" id="ingresso-id" name="ingresso-id" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="finalizar-compra">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+        <section>
+            <div class="container py-5">
+                <div class="row mb-4">
+                    <div class="col-sm-10 col-xl-6 text-center mx-auto">
+                        <h2>Nossas hospedagens</h2>
+                        <p class="mb-0">Nossas instalações modernas e serviços personalizados estão prontos para atender
+                            às suas necessidades, seja você um viajante a negócios ou lazer.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 g-md-5">
+                    <div class="col-md-4  text-center">
+                        <img src="img/casa-de-hospedes.png" class="h-200px" alt="">
+                        <h4 class="mt-3">Estadia Conectada</h4>
+                        <p class="text-truncate-2 mb-0">Nossas acomodações são cuidadosamente integradas ao ambiente
+                            natural, proporcionando uma sensação de paz e tranquilidade. Aqui, você pode se reconectar
+                            com a natureza enquanto desfruta de todo o conforto necessário para uma estadia relaxante.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4  text-center">
+                        <img src="img/natureza.png" class="h-200px" alt="">
+                        <h4 class="mt-3">Hospedagem & Natureza</h4>
+                        <p class="text-truncate-2 mb-0">Nossas hospedagens oferecem o equilíbrio perfeito entre conforto
+                            e natureza, permitindo que você se desconecte das distrações do mundo moderno e se reconecte
+                            com o ambiente natural que nos rodeia.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img src="img/barraca-de-acampamento.png" class="h-200px" alt="">
+                        <h4 class="mt-3">Diferentes opções</h4>
+                        <p class="text-truncate-2 mb-0">Ao invés de se acomodar em quartos confortáveis, você terá a
+                            oportunidade de montar sua própria tenda em nosso espaço especial para acampar. A liberdade
+                            de escolher seu próprio local de acampamento permite que você se sinta parte integrante do
+                            ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-5" >
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="mb-0 py-2">Explore nossas trilhas
+                    </h2>
+                    <p class="text-center">Veja e conheça as trilhas do Enjoy!</p>
+                </div>
+            </div>
+
+            <div class="row g-4 g-md-5">
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/2661921/pexels-photo-2661921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none" style="color: #7297b3 !important;">Águas Claras</a></h5>
+                            <span>5 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/1496373/pexels-photo-1496373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Trilha da
+                                    Mata</a></h5>
+                            <span>2,5 km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/2849231/pexels-photo-2849231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Trilha do
+                                    Pico</a></h5>
+                            <span>10 km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/702718/pexels-photo-702718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Pedra
+                                    Bonita</a></h5>
+                            <span>3 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/2825368/pexels-photo-2825368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Pedra do
+                                    Sino</a></h5>
+                            <span>11 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card bg-transparent text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/143574/pexels-photo-143574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Vale do
+                                    Pati</a></h5>
+                            <span>8 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card bg-transparent text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/395245/pexels-photo-395245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Vale
+                                    Sagrado</a></h5>
+                            <span>1,5 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card bg-transparent text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/1674120/pexels-photo-1674120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Pico dos
+                                    Marins</a></h5>
+                            <span>1 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card bg-transparent text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/746760/pexels-photo-746760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Morro duas
+                                    Irmãs</a></h5>
+                            <span>3 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card bg-transparent text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/1468676/pexels-photo-1468676.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Pico da
+                                    Bandeira</a></h5>
+                            <span>13 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/747126/pexels-photo-747126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Cachoeira da
+                                    Fumaça</a></h5>
+                            <span>5 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="Card bg-transparent text-center p-1 h-100">
+                        <img src="https://images.pexels.com/photos/17889201/pexels-photo-17889201/free-photo-of-panorama-vista-paisagem-montanhas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                        <div class="card-body p-0 pt-3">
+                            <h5 class="card-title"><a href="#" class="text-decoration-none stretched-link" style="color: #7297b3 !important;">Pedra da
+                                    Gávea</a></h5>
+                            <span>7 Km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="text-center mb-7">
+                        <h2>Perguntas frequentes</h2>
+                        <p class="mb-0">
+                            Não conseguiu encontrar uma
+                            resposta para a sua pergunta?
+                            <br>
+                            Entre em <a href="contato.html" class="text-decoration-none"><strong
+                                    class="text-primary">contato!</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12" >
+                    <div class="accordion " id="accordionExample">
+                        <div class="border mb-2 rounded-3 p-3"  style="background-color: #7297b3;">
+                            <h2 class="h5 mb-0">
+                                <a href=""
+                                    class=" text-white d-flex justify-content-between align-items-center collapsed text-decoration-none"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne"><strong> Quais são os horários de funcionamento do
+                                        parque?</strong>
+
+                                    <span class="chevron-arrow"><img src="img/sinal-de-seta-para-baixo-para-navegar.png"
+                                            alt=""><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="text-white w-100">
+                                    Nosso parque funciona semanalmente das 9h00 às 18h00, e aos sábados e feriados nos
+                                    encontramos fechados!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border mb-2 rounded-3 p-3"  style="background-color: #7297b3;">
+                            <h2 class="h5 mb-0">
+                                <a href="#"
+                                    class="text-white text-decoration-none d-flex justify-content-between align-items-center collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo"><strong>Quais são as atividades disponíveis no
+                                        ambiente?</strong>
+                                    <span class="chevron-arrow"><img src="img/sinal-de-seta-para-baixo-para-navegar.png"
+                                            alt=""><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3 text-white">
+                                    Temos uma séries de trilhas disponíveis para todos os níveis de dificuldades e
+                                    pessoas. Contamos também com atividades complementares escolhidas no dia por meio de
+                                    sorteios feitos a partir das 8h30.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border mb-2 rounded-3 p-3"  style="background-color: #7297b3;">
+                            <h2 class="h5 mb-0">
+                                <a href="#"
+                                    class="text-white text-decoration-none d-flex justify-content-between align-items-center collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree"><strong>Existe estacionamento disponível no
+                                        local?</strong>
+                                    <span class="chevron-arrow"><img src="img/sinal-de-seta-para-baixo-para-navegar.png"
+                                            alt=""><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3 text-white">
+                                    Temos cerca de 3 estacionamentos disponíveis por todo o território do parque. Fique
+                                    atento as atualizações disponíveis no site para ficar por dentro de quais
+                                    estacionamentos estão liberados para uso no momento.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border mb-2 rounded-3 p-3"  style="background-color: #7297b3;">
+                            <h2 class="h5 mb-0">
+                                <a href="#"
+                                    class="text-white text-decoration-none d-flex justify-content-between align-items-center collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour"><strong>O parque possui áreas acessíveis para <br>
+                                        pessoas com mobilidade reduzida?</strong>
+                                    <span class="chevron-arrow"><img src="img/sinal-de-seta-para-baixo-para-navegar.png"
+                                            alt=""><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3 text-white">
+                                    Sim, o nosso parque se esforça para oferecer acessibilidade a todas as pessoas,
+                                    incluindo aquelas com mobilidade reduzida. Temos trilhas e áreas especialmente
+                                    adaptadas para cadeiras de rodas, além de rampas e passarelas que facilitam o acesso
+                                    a diferentes partes do parque. Nossa equipe está treinada para fornecer assistência
+                                    e orientação sempre que necessário para garantir que todos os visitantes possam
+                                    desfrutar plenamente da beleza natural e das atividades oferecidas pelo parque. Se
+                                    você tiver necessidades específicas de acessibilidade, não hesite em nos contatar
+                                    antes da sua visita para que possamos fazer os arranjos necessários para garantir
+                                    uma experiência confortável e agradável.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border mb-2 rounded-3 p-3"  style="background-color: #7297b3;">
+                            <h2 class="h5 mb-0">
+                                <a href="#"
+                                    class="text-white text-decoration-none d-flex justify-content-between align-items-center collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive"><strong>
+                                        O parque oferece programas educacionais <br> ou palestras sobre conservação
+                                        ambiental?
+                                    </strong>
+                                    <span class="chevron-arrow"><img src="img/sinal-de-seta-para-baixo-para-navegar.png"
+                                            alt=""><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3 text-white">
+                                    Nosso parque florestal oferece uma variedade de programas educacionais e palestras
+                                    sobre conservação ambiental. Estes programas são projetados para educar os
+                                    visitantes sobre a importância da preservação da natureza, destacar os ecossistemas
+                                    locais e incentivar práticas sustentáveis. Nossas palestras são ministradas por
+                                    especialistas em conservação e biologia, e cobrem uma variedade de tópicos, desde
+                                    biodiversidade e proteção de habitats até mudanças climáticas e gestão de resíduos.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border mb-2 rounded-3 p-3"  style="background-color: #7297b3;">
+                            <h2 class="h5 mb-0">
+                                <a href="#"
+                                    class="text-white text-decoration-none d-flex justify-content-between align-items-center collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix"><strong>
+                                        Quais são as políticas do parque em relação <br> a animais de estimação?
+                                    </strong>
+
+                                    <span class="chevron-arrow"><img src="img/sinal-de-seta-para-baixo-para-navegar.png"
+                                            alt=""><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="mt-3 text-white">
+                                    No nosso parque florestal, prezamos pela preservação da fauna e flora locais, bem
+                                    como pela segurança e conforto de todos os visitantes. Por isso, geralmente não
+                                    permitimos a entrada de animais de estimação no parque. Isso se deve ao potencial
+                                    impacto que os animais domésticos podem causar ao ecossistema natural, incluindo a
+                                    possibilidade de perturbar a vida selvagem local, introduzir doenças ou causar danos
+                                    ao meio ambiente. No entanto, em casos excepcionais, como cães-guia para pessoas com
+                                    deficiência, faremos as devidas considerações e concessões para garantir a
+                                    acessibilidade a todos os visitantes. A segurança e bem-estar de todos os
+                                    frequentadores do parque são nossa prioridade máxima.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mb-5">
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 g-lg-6">
+                <div class="col">
+                    <div class="border p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <h4 class="mb-0 text-primary"><i class="bi bi-headset"><img src="img/telefone.png"
+                                            alt=""></i></h4>
+                                <div class="mx-3">
+                                    <h6 class="mb-0">Suporte</h6>
+                                    <small>Dúvidas? Nos ligue!</small>
+                                </div>
+
+                                <a class="icon-link icon-link-hover text-body stretched-link" href="contato.html"><i
+                                        class="bi bi-arrow-right fs-5"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <h4 class="mb-0 text-primary"><i class="bi bi-ticket-perforated"><img
+                                            src="img/ingressos-de-cinema (1).png" alt=""></i></h4>
+                                <div class="mx-3">
+                                    <h6 class="mb-0">Compre um ingresso</h6>
+                                    <small>Rápido e informativo!</small>
+                                </div>
+                            </div>
+                            <a class="icon-link icon-link-hover text-body stretched-link" href="chekout.html"><i
+                                    class="bi bi-arrow-right fs-5"></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <h4 class="mb-0 text-primary"><i class="bi bi-envelope-open"><img src="img/o-email.png"
+                                            alt=""></i></h4>
+                                <div class="mx-3">
+                                    <h6 class="mb-0">Nos envie um email</h6>
+                                    <small>Via: <a href="contato.html" class="heading-color text-decoration-none">enjoy@gmail.com</a></small>
+
+                                </div>
+                            </div>
+
+                            <a class="icon-link icon-link-hover text-body stretched-link" href="#"><i
+                                    class="bi bi-arrow-right fs-5"></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <footer class="position-absolute w-100 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mx-auto mb-4">
+                        <h3 class="text-secondary"><strong>Sobre nós</strong></h3>
+                        <hr id="hr">
+                        <p>
+                            Desde a nossa fundação, buscamos compartilhar
+                            o encanto e a importância das áreas verdes, oferecendo
+                            espaços cuidadosamente planejados para recreação, aprendizado e relaxamento.
+                            Venha fazer parte dessa jornada conosco e descubra a
+                            serenidade e inspiração que o Enjoy tem a oferecer.
+                        </p>
+                    </div>
+                    <div class="col-md-3 mx-auto mb-4">
+                        <h3 class="text-secondary"><strong>Contato</strong></h3>
+                        <hr id="hr">
+                        <p><img src="img/localizador-de-mapa (1).png" alt="">
+                            11675-500, Caraguatatuba, SP
+                        </p>
+                        <p><img src="img/telefone (1).png" width="16px" alt="">
+                            (12) 4002-8922
+                        </p>
+                        <p><img src="img/correspondencia (2).png" width="16px">
+                            enjoy@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <h3 class="text-secondary"><strong>Horários</strong></h3>
+                        <hr id="hr">
+                        <p>Segunda à Sexta (9h00 - 18h00)</p>
+                        <p>Sábado (8h00 - 17h00)</p>
+                        <p>Domingos e feriados (fechado)</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="JS/ingre.js">
+        </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+    
+                const botaoLogin = document.getElementById('log');
+                const iconeUsuario = document.getElementById('usuarioIcone');
+                const reg = document.getElementById('registro');
+                const nomeUsuarioElement = document.getElementById('nomeUsuario');
+                const accessToken = localStorage.getItem('accessToken');
+                const nomeUsuario = localStorage.getItem('nomeUsuario');
+                const IDUsuario = localStorage.getItem('IDUsuario');
+       
+                console.log(nomeUsuario);
+    
+                if (accessToken) {
+    
+                    botaoLogin.style.display = 'none';
+    
+                    iconeUsuario.style.display = 'block';
+    
+                    reg.style.display = 'none';
+    
+                }
+    
+                if (accessToken && nomeUsuario) {
+                    nomeUsuarioElement.textContent = JSON.parse(nomeUsuario);
+                }
+    
+                document.getElementById('sair').onclick = function () {
+                    localStorage.removeItem('accessToken');
+                    localStorage.removeItem('nomeUsuario');
+                    localStorage.removeItem('IDUsuario');
+    
+                    document.getElementById('nomeUsuario').style.display = 'none';
+                    document.getElementById('usuarioIcone').style.display = 'none';
+                    document.getElementById('log').style.display = 'block';
+                    document.getElementById('registro').style.display = 'block';
+    
+                    location.reload();
+                };
+    
+            });
+    
+    
+    
+        </script>
+    
+</body>
+
+</html>
