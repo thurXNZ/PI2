@@ -19,7 +19,7 @@
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0",
-    "prisma": "^5.14.0"
+    "nodemon": "^3.1.10",
+    "prisma": "^5.22.0"
   }
 }
